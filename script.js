@@ -1,5 +1,5 @@
 // script.js
-const display = document.getElementById('ledDisplay');
+const display = document.querySelector('.dot-matrix');
 const input = document.getElementById('textInput');
 
 input.addEventListener('input', () => {
