@@ -1,6 +1,7 @@
 /* styles.css */
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -11,7 +12,7 @@ body {
 
 #ledDisplay {
     background-color: #222;
-    color: #0f0;
+    color: #ff0;
     padding: 20px;
     font-size: 2em;
     border-radius: 10px;
@@ -19,12 +20,19 @@ body {
     text-align: center;
     overflow: hidden;
     white-space: nowrap;
-    animation: scroll 10s linear infinite;
+    display: flex;
+    justify-content: center;
 }
 
-@keyframes scroll {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+.dot-matrix {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 3px;
+    display: inline-block;
+    text-shadow: 
+        1px 0px 0px #555,
+        2px 0px 0px #555,
+        3px 0px 0px #555,
+        4px 0px 0px #555;
 }
 
 #inputBar {
