@@ -1,4 +1,3 @@
-// script.js
 const display = document.querySelector('.dot-matrix');
 const input = document.getElementById('textInput');
 
